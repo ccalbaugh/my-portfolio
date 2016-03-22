@@ -1,0 +1,240 @@
+/* * {
+	border: 1px solid green;
+} */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	color: #666856;
+	font-weight: 500;
+	font-family: "Lato", sans-serif;
+}
+
+header {
+	flex-wrap: nowrap;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	margin-top: 0.5em;
+}
+
+.container {
+	width: 80%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 0;
+}
+
+.row {
+	width: 100%;
+	flex-wrap: wrap;
+	overflow: hidden;
+	display: flex;
+	margin: 0;
+}
+
+.col-3 {
+	width: 25%;
+}
+.col-4 {
+	width: 33.33%;
+}
+.col-6 {
+	width: 50%;
+}
+.col-9 {
+	width: 75%;
+}
+
+.logo {
+	align-content: center;
+	text-align: center;
+}
+
+.logo .img-responsive {
+		margin: auto;
+}
+
+.name-tag {
+	text-align: right;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.my-name,
+.my-title {
+	margin: 0;
+}
+
+.my-name {
+	font-size: 3.5em;
+	font-weight: 100;
+	margin-bottom: 0.1em;
+}
+
+.hero {
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+	background-size: cover;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	margin: 0;
+}
+
+.hero .add {
+	margin: auto 0 auto auto;
+}
+
+.thumbnail {
+	margin-right: 1.5em;
+	border: none;
+}
+
+.thumbnail:last-of-type {
+	margin-right: 0;
+}
+
+.thumbnail img {
+	max-width: 100%;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #666856;
+	font-size: 1em;
+}
+
+a:hover {
+	color: green;
+	cursor: pointer;
+	font-weight: 700;
+	text-shadow: 0 2px 2px;
+}
+
+.break {
+	height: 3px;
+	background-color: #bcbbbb;
+	margin: 1em 0 2em;
+	width: 100%;
+}
+
+.featured-heading {
+	display: flex;
+}
+
+.featured {
+	color: #bcbbbb;
+	width: 31.5%;
+	font-size: 2em;
+	line-height: 1.3em;
+	margin: 0.7em 0 0.3em 0;
+	text-align: center;
+}
+
+.featured-work {
+	display: flex;
+	flex-flow: row nowrap;
+	text-align: center;
+	justify-content: center;
+	align-content: space-between;
+	width: 100%;
+
+}
+
+.featured-work .row {
+	text-align: center;
+}
+
+
+.featured-title {
+	font-weight: bold;
+	font-size: 2em;
+	margin: 0.3em 0 0.2em 0;
+}
+
+.add {
+	font-size: 8px;
+}
+
+.logo .add {
+	text-align: center;
+}
+
+.modal-text {
+	text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: 1200px;
+		margin: auto;
+	}
+	.featured-work {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	header {
+		text-align: center;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.logo {
+		width: 100%;
+		order: 1;
+		text-align: center;
+		align-content: center;
+	}
+	.name-tag {
+		width: 100%;
+		order: 2;
+		text-align: center;
+		align-content: center;
+	}
+	.featured {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.container {
+		width: 85%;
+		transition: 0.5s ease;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.container {
+		width: 90%;
+	}
+	.featured-work {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-right: 0;
+	}
+	.thumbnail {
+		margin-top: 15px;
+	}
+}
+@media screen and (max-width: 500px)
+{
+	.container {
+		width: 95%;
+	}
+	.col-3,
+	.col-4,
+	.col-9,
+	.thumbnail {
+		width: 100%;
+		margin: auto;
+	}
+}

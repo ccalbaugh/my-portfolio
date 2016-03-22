@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Lato:100,300'>	
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<title>My Portfolio</title>	
+	</head>
+
+	<body>
+		<section class="container">
+			<header>
+				<div class="row">
+					<div class="logo col-3">	
+						<img class="img-responsive" src="images/butterfly-logo-150_tiny_2x.jpg" alt="A Butterfly Logo">
+						<a class="add" href='http://www.freepik.com/free-vector/polygonal-butterflies-set_843758.htm'>Designed by Freepik</a>
+					</div><!-- logo .col-3 -->
+
+					<div class="name-tag col-9">
+						<h1 class="my-name">CADEN ALBAUGH</h1>
+						<h4 class="my-title">FRONT-END NINJA</h4>
+					</div><!-- .name-tag .col-9 -->
+				</div><!-- .row -->
+			</header>
+
+			<!-- PAGE BREAK -->
+			<div class="row">
+				<div class="break"></div>
+			</div><!-- row -->
+
+			<!-- HERO IMAGE -->
+			<section class="row hero">
+				<img class="img-responsive" 
+					src="images/42666-O3EM03-1287_large_2x.jpg" 
+					srcset="images/42666-O3EM03-1287_large_2x.jpg 1200w, images/42666-O3EM03-800_large_1x.jpg 800w, images/42666-O3EM03-600_medium_2x.jpg 600w"
+					sizes="(min-width: 1200px) 100vw, 100vw" 
+					alt="A computer animated mountain view"
+					data-toggle="modal"
+					data-target="#project-hero">
+				<a class="add" href='http://www.freepik.com/free-vector/landscape-with-mountains-banners_843413.htm'>Designed by Freepik</a>
+			</section><!-- .hero -->
+
+			<!-- FEATURED HEADING -->
+			<section class="row featured-heading">
+				<h2 class="featured">Featured Work</h2>
+			</section>
+
+			<!-- FEATURED PROJECTS -->
+			<section class="row featured-work">
+
+				<div class="col-4 thumbnail">
+					<a class="add" href="http://www.freepik.com">Designed by Freepik</a>
+					<img class="img-responsive" 
+						src="images/forest-day-600_medium_2x.jpg" 
+						alt="A drawn image of a sunrise in a forest"
+						data-toggle="modal"
+						data-target="#project1">
+					<h2 class="featured-title">APPIFY</h2>
+					<a href="#">https://github.com</a>
+				</div><!-- .col-4 -->
+
+				<div class="col-4 thumbnail">
+					<a class="add" href="http://www.freepik.com">Designed by Freepik</a>
+					<img class="img-responsive" 
+						src="images/hand-drawn-trees-600_medium_2x.jpg" 
+						alt="An eerily drawn forest"
+						data-toggle="modal"
+						data-target="#project2">
+					<h2 class="featured-title">APPIFY</h2>
+					<a href="#">https://github.com</a>
+				</div><!-- .col-4 -->
+
+				<div class="col-4 thumbnail">
+					<a class="add" href="http://www.freepik.com">Designed by Freepik</a>
+					<img class="img-responsive" 
+						src="images/forest-night-600_medium_2x.jpg" 
+						alt="A drawn image of the forest at night"
+						data-toggle="modal"
+						data-target="#project3">
+					<h2 class="featured-title">APPIFY</h2>
+					<a href="#">https://github.com</a>
+				</div><!-- .col-4 -->
+
+			</section><!-- .row .featured-work -->
+
+		</section><!-- .container -->
+
+		<!-- Modal --><!-- I Copied the code below for the modals from the bootstrap website -->
+		<div class="modal fade" id="project-hero" tabindex="-1" role="dialog" aria-labelledby="project-hero" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h4 class="modal-title" id="myHeroProject">My Hero Project</h4>
+		      </div>
+		      <div class="modal-body">
+		        <img class="img-responsive" 
+		        	src="images/42666-O3EM03-600_medium_2x.jpg" 
+		        	alt="A computer animated mountain view">
+		        <p class="modal-text">A misty mountain scene draws you forward, as you venture into the unknown.</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="project1" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h4 class="modal-title" id="myFirstApp">My First App</h4>
+		      </div>
+		      <div class="modal-body">
+		        <img class="img-responsive" 
+		        	src="images/forest-day-600_medium_2x.jpg" 
+		        	alt="A drawn image of a sunrise in a forest">
+		        <p class="modal-text">Placeholder text.</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="project2" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h4 class="modal-title" id="mySecondApp">My Second App</h4>
+		      </div>
+		      <div class="modal-body">
+		        <img class="img-responsive" 
+		        	src="images/hand-drawn-trees-600_medium_2x.jpg"
+		        	alt="An eerily drawn forest">
+		        <p class="modal-text">Placeholder text.</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="project3" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h4 class="modal-title" id="myThirdApp">My Third App</h4>
+		      </div>
+		      <div class="modal-body">
+		        <img class="img-responsive" 
+		        	src="images/forest-night-600_medium_2x.jpg"
+		        	alt="A drawn image of the forest at night">
+		        <p class="modal-text">Placeholder text.</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>		
+
+	</body>
+</html>
